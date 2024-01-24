@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="handleClick()">Click</button>
+    <button id="btn-1" Click2></button>
+    <script>
+      function handleClick() {
+        console.log("Click 1");
+      }
+
+      let btnElement = document.querySelector("#btn-1");
+      btnElement.onclick = function () {
+        console.log("Click 2");
+      };
+      btnElement1.addEventListener("click", function () {
+        console.log("click 3");
+      });
+    </script>
+  </body>
+</html>
